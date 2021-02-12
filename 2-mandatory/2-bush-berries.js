@@ -21,8 +21,14 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function isBushSafe() {}
-
+function isBushSafe(bush) {
+  const checkBurry = (colour) => colour === "pink";
+  if (bush.every(checkBurry)) {
+    return "Bush is safe to eat from";
+  } else {
+    return "Toxic! Leave bush alone!";
+  }
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 let bushBerryColours1 = ["pink", "pink", "pink", "neon", "pink", "transparent"];

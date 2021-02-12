@@ -15,8 +15,11 @@
   
 */
 
-function getSettlers() {}
-
+function getSettlers(voyagers) {
+ 
+  const FamilyStaying = voyagers.filter((voyagersName => voyagersName.includes("family") && voyagersName[0] === "A"));
+  return FamilyStaying;
+}
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const voyagers = [

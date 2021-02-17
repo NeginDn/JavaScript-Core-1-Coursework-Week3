@@ -22,7 +22,7 @@
 */
 
 function isBushSafe(bush) {
-  const checkBurry = (colour) => colour === "pink";
+  let checkBurry = (colour) => colour === "pink";
   if (bush.every(checkBurry)) {
     return "Bush is safe to eat from";
   } else {

@@ -6,10 +6,15 @@
     (see tests to confirm how this data will be structured)
   - Returns an array containing only the names of the who have attended AT LEAST 8 classes
 */
+const MINIMUM_CLASSES = 8;
+const NAME_INDEX = 0;
+const ATTENDANCE_INDEX = 1;
 
 function getEligibleStudents(attendances) {
-  const eligibleStudents = attendances.filter(student => student[1] >= 8);
-  return eligibleStudents.map(student =>student[0]);
+  const eligibleStudents = attendances.filter(
+    (student) => student[ATTENDANCE_INDEX] >= MINIMUM_CLASSES
+  );
+  return eligibleStudents.map((student) => student[NAME_INDEX]);
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

@@ -25,8 +25,7 @@ let multiplied3 = numbers.map(function (number3) {
 console.log("Case 3: " + multiplied3);
 
 //4
-let multiplied4 = numbers.map((number4) => {
-  return number4 * 100;
-});
+let multiplied4 = numbers.map((number4) => 
+   number4 * 100);
 
 console.log("Case 4: " + multiplied4);

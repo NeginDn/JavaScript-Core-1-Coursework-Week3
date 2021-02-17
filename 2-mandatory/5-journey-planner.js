@@ -84,11 +84,7 @@ function getTransportModes(attraction) {
   Hint: Use the corresponding array method to decide if an element is member of an array.
 */
 function isAccessibleByTransportMode(transportList, transportMode) {
-  if (transportList.includes(transportMode)) {
-    return true;
-  } else {
-    return false;
-  }
+  return transportList.includes(transportMode)
 }
 
 /*

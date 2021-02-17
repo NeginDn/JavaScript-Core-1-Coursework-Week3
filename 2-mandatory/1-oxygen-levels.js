@@ -9,13 +9,13 @@
 */
 
 function findSafeOxygenLevel(planetOxygenLevel) {
-  const OxygenInNumber = planetOxygenLevel.map((number) =>
+  let oxygenInNumber = planetOxygenLevel.map((number) =>
     number.replace("%", "")
   );
-  const isOnRange = OxygenInNumber.find(
+  const safeOxygenLevel = oxygenInNumber.find(
     (number) => number > 19.5 && number < 23.5
   );
-  return isOnRange + "%";
+  return safeOxygenLevel + "%";
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

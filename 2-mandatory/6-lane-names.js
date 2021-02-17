@@ -7,10 +7,9 @@
 */
 
 function getLanes(streetNames) {
-  const LaneStreet = streetNames.filter((streetName) =>
+  return streetNames.filter((streetName) =>
     streetName.includes("Lane")
   );
-  return LaneStreet;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

@@ -20,7 +20,7 @@ function isNull(indexes) {
 }
 
 var pairs = pairsByIndex.map(function (indexes) {
-  if (isNull) {
+  if (pairsByIndex.some(isNull)) {
     console.log("Undefined output :( ");
     process.exit(1);
   }
